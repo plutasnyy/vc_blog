@@ -19,6 +19,7 @@ from main import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.homepage),
+    url(r'^$', views.homepage, name="Homepage"),
+    url(r'post/(?P<id>[0-9]+)$', views.post, name="Postpage"),
 
 ]
