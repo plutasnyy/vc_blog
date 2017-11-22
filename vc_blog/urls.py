@@ -15,6 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
+
 from main import views
 
 urlpatterns = [
@@ -22,4 +25,6 @@ urlpatterns = [
     url(r'^$', views.homepage, name="Homepage"),
     url(r'post/(?P<id>[0-9]+)$', views.post, name="Postpage"),
 
-]
+]# ... the rest of your URLconf here ...
+
+urlpatterns += staticfiles_urlpatterns()

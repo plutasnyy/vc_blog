@@ -1,6 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <head>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> BraAIan`s Blog </title>
@@ -8,6 +13,9 @@
 
     <body>
     <div class = "container-fluid">
+
+
+
         <div class = "row">
             <div class = "container">
                 HEADER KURWA
@@ -23,7 +31,7 @@
                         <p2>Title: {{ post.title }}</p2></br>
                         <p2>Author: {{ post.author }}</p2></br>
                         <p2>Date: {{ post.created_time }}</p2></br>
-                        <p2>Body: {{ post.body }}</p2></br>
+                        <p2>Description: {{ post.description }}</p2></br>
                     </a>
                     </div>
                     </br>
@@ -38,14 +46,6 @@
     </div>
 
 
-        <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     </body>
 </html>
