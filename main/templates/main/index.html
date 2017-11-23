@@ -4,6 +4,9 @@
 <head>
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}" />
     <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> BraAIan`s Blog </title>
 </head>
@@ -26,30 +29,53 @@
         <img src="{% static 'main/img/header_background.jpg' %}" class="header_bg">
     </div>
 
-    <div class = "container-fluid">
+    <div class = "container">
         <div class = "row">
             <div class = "container">
                 HEADER KURWA
 
             </div>
         </div>
-        <div class ="row posts">
-            <div class = "container">
-            <p2> BLOGENS HANCIKA I KAMCIA </p2></br></br>
+
+        <div class ="row">
+            <div class ="col-12">
 
                 {% for post in posts %}
-                    <div class="Post"><a href="{% url 'Postpage' post.id %}">
-                        <p2>ID: {{ post.id }}</p2></br>
-                        <p2>Title: {{ post.title }}</p2></br>
-                        <p2>Author: {{ post.author }}</p2></br>
-                        <p2>Date: {{ post.created_time }}</p2></br>
-                        <p2>Description: {{ post.description }}</p2></br>
-                    </a>
+                    <div class="row">
+
+                        <div class="col-md-12 post_title">
+                            <p2>{{ post.title }}</p2></br>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12 row fill_post">
+
+                        <p2>Description: {{ post.description }}</p2>
+
+                    </div>
+                    <div class="row bar_under_post">
+                        <div class="col-md-2 col-xs-2">
+                            <img src="{% static 'main/img/person_icon.png' %}" \>
+                            <p2>{{ post.author }}</p2>
+                        </div>
+                        <div class="col-md-3 col-xs-3">
+                            <img src="{% static 'main/img/calendar_icon.png' %}" \>
+                            <p2>{{ post.created_time.date }}</p2>
+                        </div>
+                        <div class="col-md-2 col-xs-2">
+                            <img src="{% static 'main/img/clock_icon.png' %}" \>
+                            <p2>{{ post.created_time.time }}</p2>
+                        </div>
+
+                        <div class="col-md-2 col-xs-offset-3 col-xs-2">
+                            <a href="{% url 'Postpage' post.id %}">GUZIK</a>
+                        </div>
                     </div>
                     </br>
                 {% endfor %}
             </div>
         </div>
+
         <div class = "row">
             <div class = "container">
                 ABOUT US
