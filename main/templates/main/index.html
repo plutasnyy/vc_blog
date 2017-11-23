@@ -32,49 +32,47 @@
     <div class = "container">
         <div class = "row">
             <div class = "container">
-                HEADER KURWA
 
             </div>
         </div>
-
-        <div class ="row">
-            <div class ="col-12">
 
                 {% for post in posts %}
-                    <div class="row">
 
-                        <div class="col-md-12 post_title">
-                            <p2>{{ post.title }}</p2></br>
+                    <div class ="row">
+
+
+                        <div class="row">
+
+                            <div class="col-md-12 post_title">
+                                <p2>{{ post.title }}</p2></br>
+                            </div>
+
                         </div>
+                        <div class="col-md-12 row fill_post">
 
+                            <p2>Description: {{ post.description }}</p2>
+
+                        </div>
+                        <div class="row bar_under_post">
+                            <div class="col-md-2 col-xs-2">
+                                <img src="{% static 'main/img/person_icon.png' %}" \>
+                                <p2>{{ post.author }}</p2>
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+                                <img src="{% static 'main/img/calendar_icon.png' %}" \>
+                                <p2>{{ post.created_time.date }}</p2>
+                            </div>
+                            <div class="col-md-2 col-xs-3">
+                                <img src="{% static 'main/img/clock_icon.png' %}" \>
+                                <p2>{{ post.created_time.time }}</p2>
+                            </div>
+
+                            <div class="col-md-2 col-md-offset-3     col-xs-2">
+                                <a href="{% url 'Postpage' post.id %}">GUZIK</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-12 row fill_post">
-
-                        <p2>Description: {{ post.description }}</p2>
-
-                    </div>
-                    <div class="row bar_under_post">
-                        <div class="col-md-2 col-xs-2">
-                            <img src="{% static 'main/img/person_icon.png' %}" \>
-                            <p2>{{ post.author }}</p2>
-                        </div>
-                        <div class="col-md-3 col-xs-3">
-                            <img src="{% static 'main/img/calendar_icon.png' %}" \>
-                            <p2>{{ post.created_time.date }}</p2>
-                        </div>
-                        <div class="col-md-2 col-xs-2">
-                            <img src="{% static 'main/img/clock_icon.png' %}" \>
-                            <p2>{{ post.created_time.time }}</p2>
-                        </div>
-
-                        <div class="col-md-2 col-xs-offset-3 col-xs-2">
-                            <a href="{% url 'Postpage' post.id %}">GUZIK</a>
-                        </div>
-                    </div>
-                    </br>
                 {% endfor %}
-            </div>
-        </div>
 
         <div class = "row">
             <div class = "container">

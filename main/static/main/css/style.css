@@ -11,8 +11,6 @@ body, html {
     height: 100%;
 }
 
-
-
 .bg_container{
     display: block;
 }
@@ -51,13 +49,18 @@ body, html {
 }
 
 .post_title{
+    margin-top: 4%;
     font-weight: bold;
 }
 
 .bar_under_post{
+    font-size: 18pt;
+    color: red;
+
 
 }
 
 .fill_post{
     text-align: justify;
+    padding-bottom: 2.5%;
 }
