@@ -30,55 +30,77 @@
     </div>
 
     <div class = "container">
-        <div class = "row">
-            <div class = "container">
 
-            </div>
-        </div>
+        {% for post in posts %}
 
-                {% for post in posts %}
-
-                    <div class ="row">
+            <div class ="row">
 
 
-                        <div class="row">
+                <div class="row">
 
-                            <div class="col-md-12 post_title">
-                                <p2>{{ post.title }}</p2></br>
-                            </div>
-
-                        </div>
-                        <div class="col-md-12 row fill_post">
-
-                            <p2>Description: {{ post.description }}</p2>
-
-                        </div>
-                        <div class="row bar_under_post">
-                            <div class="col-md-2 col-xs-2">
-                                <img src="{% static 'main/img/person_icon.png' %}" \>
-                                <p2>{{ post.author }}</p2>
-                            </div>
-                            <div class="col-md-3 col-xs-3">
-                                <img src="{% static 'main/img/calendar_icon.png' %}" \>
-                                <p2>{{ post.created_time.date }}</p2>
-                            </div>
-                            <div class="col-md-2 col-xs-3">
-                                <img src="{% static 'main/img/clock_icon.png' %}" \>
-                                <p2>{{ post.created_time.time }}</p2>
-                            </div>
-
-                            <div class="col-md-2 col-md-offset-3     col-xs-2">
-                                <a href="{% url 'Postpage' post.id %}">GUZIK</a>
-                            </div>
-                        </div>
+                    <div class="col-md-12 post_title">
+                        <p2>{{ post.title }}</p2></br>
                     </div>
-                {% endfor %}
 
-        <div class = "row">
-            <div class = "container">
-                ABOUT US
+                </div>
+                <div class="col-md-12 row fill_post">
+
+                    <p2>Description: {{ post.description }}</p2>
+
+                </div>
+                <div class="row bar_under_post">
+                    <div class="col-md-2 col-xs-2">
+                        <img src="{% static 'main/img/person_icon.png' %}" \>
+                        <p2>{{ post.author }}</p2>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <img src="{% static 'main/img/calendar_icon.png' %}" \>
+                        <p2>{{ post.created_time.date }}</p2>
+                    </div>
+                    <div class="col-md-2 col-xs-3">
+                        <img src="{% static 'main/img/clock_icon.png' %}" \>
+                        <p2>{{ post.created_time.time }}</p2>
+                    </div>
+
+                    <div class="col-md-2 col-md-offset-3     col-xs-2">
+                        <a href="{% url 'Postpage' post.id %}">GUZIK</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        {% endfor %}
+    </div>
+
+    <div class="container-fluid meet-us">
+        <div class = "container">
+            <div class="row ">
+                <img src="{% static 'main/img/meet_us_logo.png' %}" style \>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <img src="{% static 'main/img/hania_circle.png' %}" \>
+                </div>
+                <div class="col-md-9 col-xs-12">
+                    <div class="row justify-content-xs-center">
+                        <img src="{% static 'main/img/hanna_klimczak.png' %}" style="float: right" \>
+                    </div>
+
+                    <div style="float: right;text-align: right"> <p3>JAKIS DIV NA DUZO TEKSTU </p3></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-9 col-xs-12">
+
+                    <img src="{% static 'main/img/kamil_plucinski.png' %}" \>
+
+                    <div> <p3>JAKIS DIV NA DUZO TEKSTU</p3> </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <img src="{% static 'main/img/circle_kamil.png' %}" \>
+                </div>
+            </div>
+
+        <div/>
     </div>
 
         <!-- Latest compiled and minified CSS -->

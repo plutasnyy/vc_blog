@@ -2,9 +2,6 @@
     margin:0px;
     padding:0px;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
-    color: #101211;
-
 }
 
 body, html {
@@ -54,13 +51,18 @@ body, html {
 }
 
 .bar_under_post{
-    font-size: 18pt;
-    color: red;
-
-
+    font-size: 16px;
 }
 
 .fill_post{
     text-align: justify;
     padding-bottom: 2.5%;
+}
+
+.meet-us{
+    background-color: #0e0f10;
+}
+
+p3{
+    color:white;
 }
