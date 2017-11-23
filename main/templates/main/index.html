@@ -9,15 +9,24 @@
 </head>
 
     <body>
-    <div class="bg_contener">
-        <img src="{% static 'main/img/header_logo.png' %}" class="header_logo">
+    <div class="bg_container">
+        <div class="container">
+            <div class = "row header_logo">
+                <img src="{% static 'main/img/header_logo.png' %}" class="header_logo">
+            </div>
+            <div class="row header_description">
+                LALALA OPIS
+            </div>
+            <div class="row buttons_block">
+                <a href="#" class="btn btn-info" role="button">Link Button</a>
+                <button type="button" class="btn btn-info">Button</button>
+            </div>
+        </div>
 
         <img src="{% static 'main/img/header_background.jpg' %}" class="header_bg">
     </div>
 
     <div class = "container-fluid">
-
-
         <div class = "row">
             <div class = "container">
                 HEADER KURWA

@@ -7,6 +7,12 @@ body, html {
     height: 100%;
 }
 
+
+
+.bg_container{
+    display: block;
+}
+
 .header_bg{
     height: 100%;
     width: 100%;
@@ -17,20 +23,25 @@ body, html {
     z-index: -10;
 }
 
-.posts{
-    background-color: azure;
-}
-
-.bg_contener{
-    display: block;
-}
-
 .header_logo{
-    width: 650px;
-    height: 100px;
+    width: 650vp;
+    height: 100vp;
     position: absolute;
     left: 50%;
     bottom: 50%;
     margin-left: -325px;
     margin-bottom: +150px;
+}
+
+.header_description{
+
+}
+
+.buttons_block{
+
+}
+
+.btn{
+    display: block;
+    position: absolute;
 }
