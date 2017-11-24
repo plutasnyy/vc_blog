@@ -38,27 +38,27 @@
 
                 <div class="row">
 
-                    <div class="col-md-12 post_title">
+                    <div class="col-*-12 post_title">
                         <p2>{{ post.title }}</p2></br>
                     </div>
 
                 </div>
-                <div class="col-md-12 row fill_post">
+                <div class="col-*-12 row fill_post">
 
                     <p2>Description: {{ post.description }}</p2>
 
                 </div>
                 <div class="row bar_under_post">
-                    <div class="col-md-2 col-xs-2">
-                        <img src="{% static 'main/img/person_icon.png' %}" \>
+                    <div class="col-md-2 col-xs-2 icon_text">
+                        <img src="{% static 'main/img/person_icon.png' align="middle">%}" \>
                         <p2>{{ post.author }}</p2>
                     </div>
-                    <div class="col-md-3 col-xs-3">
-                        <img src="{% static 'main/img/calendar_icon.png' %}" \>
+                    <div class="col-md-3 col-xs-3 icon_text">
+                        <img src="{% static 'main/img/calendar_icon.png' align="middle">%}" \>
                         <p2>{{ post.created_time.date }}</p2>
                     </div>
-                    <div class="col-md-2 col-xs-3">
-                        <img src="{% static 'main/img/clock_icon.png' %}" \>
+                    <div class="col-md-2 col-xs-3 icon_text">
+                        <img src="{% static 'main/img/clock_icon.png' align="middle">%}" \>
                         <p2>{{ post.created_time.time }}</p2>
                     </div>
 
@@ -72,31 +72,37 @@
 
     <div class="container-fluid meet-us">
         <div class = "container">
-            <div class="row ">
-                <img src="{% static 'main/img/meet_us_logo.png' %}" style \>
-            </div>
             <div class="row">
-                <div class="col-md-3 col-xs-12">
+                <div class="col-*-12 meet_us_logo">
+                    <img src="{% static 'main/img/meet_us_logo.png' %}" \>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 15%;">
+                <div class="col-md-4 col-xs-12 about_us_photo">
                     <img src="{% static 'main/img/hania_circle.png' %}" \>
                 </div>
-                <div class="col-md-9 col-xs-12">
-                    <div class="row justify-content-xs-center">
-                        <img src="{% static 'main/img/hanna_klimczak.png' %}" style="float: right" \>
+                <div class="col-md-8 col-xs-12 ">
+                    <div class="about_us_name" style="height:30px">
+                        <img src="{% static 'main/img/hanna_klimczak.png' %}" \>
                     </div>
 
-                    <div style="float: right;text-align: right"> <p3>JAKIS DIV NA DUZO TEKSTU </p3></div>
+                    <div class="about about_hania">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ipsum urna. Pellentesque ut enim in est rutrum condimentum non ac risus. Fusce placerat risus ut tellus sollicitudin dapibus. Quisque suscipit felis sapien, eu accumsan erat varius ac. Morbi pretium lacus ultricies quam ultricies, eu posuere orci condimentum. Sed mi purus, tristique eget condimentum in, tristique feugiat dui. Cras et dui in nunc pretium imperdiet. Ut magna orci, interdum ut lacus sit amet, efficitur iaculis libero. Fusce eget quam nunc. Sed congue sapien metus, nec luctus nisi porttitor a. Integer convallis nunc tristique, pellentesque dolor quis, mattis justo. Etiam dolor libero, facilisis a ornare a, congue placerat mauris. Integer vel quam et dui tempus ultricies. In consectetur nulla at nunc cursus, sit amet vestibulum augue blandit.
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-9 col-xs-12">
+            <div class="row" style="padding-top: 15%;">
+                <div class="col-md-8 col-xs-12 about_us_name">
 
                     <img src="{% static 'main/img/kamil_plucinski.png' %}" \>
 
-                    <div> <p3>JAKIS DIV NA DUZO TEKSTU</p3> </div>
+                    <div class="about about_kamil">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ipsum urna. Pellentesque ut enim in est rutrum condimentum non ac risus. Fusce placerat risus ut tellus sollicitudin dapibus. Quisque suscipit felis sapien, eu accumsan erat varius ac. Morbi pretium lacus ultricies quam ultricies, eu posuere orci condimentum. Sed mi purus, tristique eget condimentum in, tristique feugiat dui. Cras et dui in nunc pretium imperdiet. Ut magna orci, interdum ut lacus sit amet, efficitur iaculis libero. Fusce eget quam nunc. Sed congue sapien metus, nec luctus nisi porttitor a. Integer convallis nunc tristique, pellentesque dolor quis, mattis justo. Etiam dolor libero, facilisis a ornare a, congue placerat mauris. Integer vel quam et dui tempus ultricies. In consectetur nulla at nunc cursus, sit amet vestibulum augue blandit.
+                    </div>
                 </div>
-                <div class="col-md-3 col-xs-12">
-                    <img src="{% static 'main/img/circle_kamil.png' %}" \>
+                <div class="col-md-4 col-xs-12 about_us_photo">
+                    <img src="{% static 'main/img/circle_kamil.png' %}" style="width: 300px;height: 300px;"\>
                 </div>
             </div>
 

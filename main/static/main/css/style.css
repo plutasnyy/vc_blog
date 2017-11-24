@@ -50,6 +50,9 @@ body, html {
     font-weight: bold;
 }
 
+.icon_text{
+    color:#8c8c8c;
+}
 .bar_under_post{
     font-size: 16px;
 }
@@ -65,4 +68,47 @@ body, html {
 
 p3{
     color:white;
+}
+
+.meet_us_logo{
+    text-align:center;
+    padding-top:15%;
+}
+
+.about{
+    padding-top: 2%;
+    color: #d7d7d7;
+    text-align: justify;
+    font-size: 0.85vw;
+
+}
+
+.about_hania{
+    text-align-last: right;
+}
+
+.about_kamil{
+    text-align-last: left;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    .about{
+        font-size: 2vw;
+    }
+    .about_hania{
+        text-align-last: center;
+    }
+    .about_kamil{
+        text-align-last: center;
+    }
+    .about_us_name{
+        text-align: center;
+    }
+    .about_us_photo{
+        text-align: center;
+    }
 }
