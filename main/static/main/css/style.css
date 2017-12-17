@@ -47,19 +47,22 @@ body, html {
 
 .post_title{
     margin-top: 4%;
+    font-size: 26px;
     font-weight: bold;
 }
 
 .icon_text{
     color:#8c8c8c;
 }
+
 .bar_under_post{
     font-size: 16px;
 }
 
 .fill_post{
     text-align: justify;
-    padding-bottom: 2.5%;
+    font-size:18px;
+    padding-bottom: 3%;
 }
 
 .meet-us{
@@ -79,7 +82,7 @@ p3{
     padding-top: 2%;
     color: #d7d7d7;
     text-align: justify;
-    font-size: 0.85vw;
+    font-size: 16px;
 
 }
 
@@ -91,13 +94,49 @@ p3{
     text-align-last: left;
 }
 
+.btn-send-email{
+    cursor: pointer;
+    margin-top: 2.5%;
+    width: 200px;
+    height: 50px;
+    border-color: #d7d7d7;
+    border-width:1px;
+    border-style: solid;
+    border-radius: 2px;
+    color: yellow;
+
+    padding-top: 13px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.btn-send-email:hover{
+    background-color: #d7d7d7;
+    color: #0e0f10;
+}
+
+.btn-kamil{
+    float: left;
+}
+
+.btn-hania{
+    float: right;
+}
+
 @media screen and (max-width: 992px) {
     body {
         background-color: lightgreen;
     }
 
+    .btn-read-more{
+        display: none;
+    }
+
     .about{
-        font-size: 2vw;
+        font-size: 16px;
+        padding-bottom: 5%;
     }
     .about_hania{
         text-align-last: center;
@@ -109,6 +148,14 @@ p3{
         text-align: center;
     }
     .about_us_photo{
+        padding-bottom: 5%;
         text-align: center;
+    }
+    .btn-send-email{
+        float: none;
+        margin: 0 auto;
+    }
+    .btn-kamil{
+        margin-bottom: 5%;
     }
 }

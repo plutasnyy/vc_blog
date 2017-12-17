@@ -45,32 +45,32 @@
                 </div>
                 <div class="col-*-12 row fill_post">
 
-                    <p2>Description: {{ post.description }}</p2>
+                    <p2>{{ post.description }}</p2>
 
                 </div>
                 <div class="row bar_under_post">
-                    <div class="col-md-2 col-xs-2 icon_text">
+                    <div class="col-md-2 col-xs-12 icon_text">
                         <img src="{% static 'main/img/person_icon.png' align="middle">%}" \>
                         <p2>{{ post.author }}</p2>
                     </div>
-                    <div class="col-md-3 col-xs-3 icon_text">
+                    <div class="col-md-3 col-xs-12 icon_text">
                         <img src="{% static 'main/img/calendar_icon.png' align="middle">%}" \>
                         <p2>{{ post.created_time.date }}</p2>
                     </div>
-                    <div class="col-md-2 col-xs-3 icon_text">
+                    <div class="col-md-2 col-xs-12 icon_text">
                         <img src="{% static 'main/img/clock_icon.png' align="middle">%}" \>
                         <p2>{{ post.created_time.time }}</p2>
                     </div>
 
-                    <div class="col-md-2 col-md-offset-3     col-xs-2">
+                    <div class="col-md-2 col-md-offset-3 btn-read-more">
                         <a href="{% url 'Postpage' post.id %}">GUZIK</a>
                     </div>
                 </div>
             </div>
         {% endfor %}
     </div>
-
     <div class="container-fluid meet-us">
+
         <div class = "container">
             <div class="row">
                 <div class="col-*-12 meet_us_logo">
@@ -89,10 +89,12 @@
                     <div class="about about_hania">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ipsum urna. Pellentesque ut enim in est rutrum condimentum non ac risus. Fusce placerat risus ut tellus sollicitudin dapibus. Quisque suscipit felis sapien, eu accumsan erat varius ac. Morbi pretium lacus ultricies quam ultricies, eu posuere orci condimentum. Sed mi purus, tristique eget condimentum in, tristique feugiat dui. Cras et dui in nunc pretium imperdiet. Ut magna orci, interdum ut lacus sit amet, efficitur iaculis libero. Fusce eget quam nunc. Sed congue sapien metus, nec luctus nisi porttitor a. Integer convallis nunc tristique, pellentesque dolor quis, mattis justo. Etiam dolor libero, facilisis a ornare a, congue placerat mauris. Integer vel quam et dui tempus ultricies. In consectetur nulla at nunc cursus, sit amet vestibulum augue blandit.
                     </div>
+
+                    <div class="btn-send-email btn-hania">SEND E-MAIL</div>
                 </div>
             </div>
 
-            <div class="row" style="padding-top: 15%;">
+            <div class="row" style="padding-top: 15%;padding-bottom: 15%;">
                 <div class="col-md-8 col-xs-12 about_us_name">
 
                     <img src="{% static 'main/img/kamil_plucinski.png' %}" \>
@@ -100,6 +102,8 @@
                     <div class="about about_kamil">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ipsum urna. Pellentesque ut enim in est rutrum condimentum non ac risus. Fusce placerat risus ut tellus sollicitudin dapibus. Quisque suscipit felis sapien, eu accumsan erat varius ac. Morbi pretium lacus ultricies quam ultricies, eu posuere orci condimentum. Sed mi purus, tristique eget condimentum in, tristique feugiat dui. Cras et dui in nunc pretium imperdiet. Ut magna orci, interdum ut lacus sit amet, efficitur iaculis libero. Fusce eget quam nunc. Sed congue sapien metus, nec luctus nisi porttitor a. Integer convallis nunc tristique, pellentesque dolor quis, mattis justo. Etiam dolor libero, facilisis a ornare a, congue placerat mauris. Integer vel quam et dui tempus ultricies. In consectetur nulla at nunc cursus, sit amet vestibulum augue blandit.
                     </div>
+
+                    <div class="btn-send-email btn-kamil">SEND E-MAIL</div>
                 </div>
                 <div class="col-md-4 col-xs-12 about_us_photo">
                     <img src="{% static 'main/img/circle_kamil.png' %}" style="width: 300px;height: 300px;"\>
