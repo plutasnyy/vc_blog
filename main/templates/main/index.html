@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}" />
     <meta charset="UTF-8">
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,7 +39,9 @@
                 <div class="row">
 
                     <div class="col-*-12 post_title">
-                        <p2>{{ post.title }}</p2></br>
+                             <a href="{% url 'Postpage' post.id %}">
+                                <p2>{{ post.title }}</br></p2>
+                              </a>
                     </div>
 
                 </div>
@@ -50,21 +52,28 @@
                 </div>
                 <div class="row bar_under_post">
                     <div class="col-md-2 col-xs-12 icon_text">
-                        <img src="{% static 'main/img/person_icon.png' align="middle">%}" \>
+                        <img src="{% static 'main/img/person_icon.png' %}" class="img_about_post" \>
                         <p2>{{ post.author }}</p2>
                     </div>
                     <div class="col-md-3 col-xs-12 icon_text">
-                        <img src="{% static 'main/img/calendar_icon.png' align="middle">%}" \>
+                        <img src="{% static 'main/img/calendar_icon.png' %}" class="img_about_post" \>
                         <p2>{{ post.created_time.date }}</p2>
                     </div>
                     <div class="col-md-2 col-xs-12 icon_text">
-                        <img src="{% static 'main/img/clock_icon.png' align="middle">%}" \>
+                        <img src="{% static 'main/img/clock_icon.png' %}" class="img_about_post" \>
                         <p2>{{ post.created_time.time }}</p2>
                     </div>
 
-                    <div class="col-md-2 col-md-offset-3 btn-read-more">
-                        <a href="{% url 'Postpage' post.id %}">GUZIK</a>
+                    <div class="col-md-2 col-md-offset-3">
+                        <a href="{% url 'Postpage' post.id %}">
+                            <div class="btn_read_more">
+                                <div class="ab">
+                                    <p3>READ MORE</p3>
+                                </div>
+                            </div>
+                        </a>
                     </div>
+
                 </div>
             </div>
         {% endfor %}
@@ -89,8 +98,6 @@
                     <div class="about about_hania">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ipsum urna. Pellentesque ut enim in est rutrum condimentum non ac risus. Fusce placerat risus ut tellus sollicitudin dapibus. Quisque suscipit felis sapien, eu accumsan erat varius ac. Morbi pretium lacus ultricies quam ultricies, eu posuere orci condimentum. Sed mi purus, tristique eget condimentum in, tristique feugiat dui. Cras et dui in nunc pretium imperdiet. Ut magna orci, interdum ut lacus sit amet, efficitur iaculis libero. Fusce eget quam nunc. Sed congue sapien metus, nec luctus nisi porttitor a. Integer convallis nunc tristique, pellentesque dolor quis, mattis justo. Etiam dolor libero, facilisis a ornare a, congue placerat mauris. Integer vel quam et dui tempus ultricies. In consectetur nulla at nunc cursus, sit amet vestibulum augue blandit.
                     </div>
-
-                    <div class="btn-send-email btn-hania">SEND E-MAIL</div>
                 </div>
             </div>
 
@@ -103,7 +110,6 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ipsum urna. Pellentesque ut enim in est rutrum condimentum non ac risus. Fusce placerat risus ut tellus sollicitudin dapibus. Quisque suscipit felis sapien, eu accumsan erat varius ac. Morbi pretium lacus ultricies quam ultricies, eu posuere orci condimentum. Sed mi purus, tristique eget condimentum in, tristique feugiat dui. Cras et dui in nunc pretium imperdiet. Ut magna orci, interdum ut lacus sit amet, efficitur iaculis libero. Fusce eget quam nunc. Sed congue sapien metus, nec luctus nisi porttitor a. Integer convallis nunc tristique, pellentesque dolor quis, mattis justo. Etiam dolor libero, facilisis a ornare a, congue placerat mauris. Integer vel quam et dui tempus ultricies. In consectetur nulla at nunc cursus, sit amet vestibulum augue blandit.
                     </div>
 
-                    <div class="btn-send-email btn-kamil">SEND E-MAIL</div>
                 </div>
                 <div class="col-md-4 col-xs-12 about_us_photo">
                     <img src="{% static 'main/img/circle_kamil.png' %}" style="width: 300px;height: 300px;"\>

@@ -1,7 +1,7 @@
 * {
     margin:0px;
     padding:0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 body, html {
@@ -46,13 +46,29 @@ body, html {
 }
 
 .post_title{
-    margin-top: 4%;
-    font-size: 26px;
+    margin-top: 7%;
+    font-size: 40px;
     font-weight: bold;
+    padding-bottom: 3%;
 }
 
+.btn_read_more{
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background-color: #0e0f10;
+}
+
+.ab{
+    padding-top: 14px;
+    padding-left: 56px;
+}
 .icon_text{
     color:#8c8c8c;
+}
+
+.img_about_post{
+    padding-bottom: 5px;
 }
 
 .bar_under_post{
@@ -61,16 +77,21 @@ body, html {
 
 .fill_post{
     text-align: justify;
-    font-size:18px;
-    padding-bottom: 3%;
+    font-size:20px;
 }
 
 .meet-us{
     background-color: #0e0f10;
 }
-
+p2{
+    color: #404040;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
 p3{
-    color:white;
+    color:yellow;
 }
 
 .meet_us_logo{
@@ -131,7 +152,7 @@ p3{
     }
 
     .btn-read-more{
-        display: none;
+        display: none;cd
     }
 
     .about{
