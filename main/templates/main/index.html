@@ -13,23 +13,25 @@
 
     <body>
     <div class="bg_container">
-        <div class="container">
-            <div class = "row header_logo">
+        <div class="container bg_content">
+            <div class = "row">
                 <img src="{% static 'main/img/header_logo.png' %}" class="header_logo">
             </div>
             <div class="row header_description">
                 LALALA OPIS
             </div>
-            <div class="row buttons_block">
-                <a href="#" class="btn btn-info" role="button">Link Button</a>
-                <button type="button" class="btn btn-info">Button</button>
+            <div class="row">
+                <div class="buttons_block">
+                    <div class="btn_in_header">MEET BRAIAN</div>
+                    <div class="btn_in_header" style="margin-left: 50px;">MEET US</div>
+                </div>
             </div>
         </div>
 
         <img src="{% static 'main/img/header_background.jpg' %}" class="header_bg">
     </div>
 
-    <div class = "container">
+    <div class = "container" style="padding-bottom: 200px;">
 
         {% for post in posts %}
 
@@ -40,7 +42,7 @@
 
                     <div class="col-*-12 post_title">
                              <a href="{% url 'Postpage' post.id %}">
-                                <p2>{{ post.title }}</br></p2>
+                                <p2>{{ post.title }}</p2>
                               </a>
                     </div>
 
@@ -64,7 +66,8 @@
                         <p2>{{ post.created_time.time }}</p2>
                     </div>
 
-                    <div class="col-md-2 col-md-offset-3">
+
+                    <div class="col-md-2 col-md-offset-3 col-xs-12">
                         <a href="{% url 'Postpage' post.id %}">
                             <div class="btn_read_more">
                                 <div class="ab">
