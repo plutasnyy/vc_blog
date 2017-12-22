@@ -5,12 +5,12 @@ def homepage(request):
     Posts = PostModel.objects.all()
     Posts = sorted(Posts, key=lambda x: x.created_time, reverse=True)
 
-    return render(request, 'main/index.html', {
+    return render(request, 'index.html', {
         'posts': Posts
     })
 
 def post(request, id):
     post = PostModel.objects.all().filter(id=id)[0]
-    return render(request,'main/post.html',{
+    return render(request,'post.html',{
         'post':post
     })
