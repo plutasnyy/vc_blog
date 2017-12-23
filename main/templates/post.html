@@ -1,18 +1,17 @@
 {% extends 'base.html' %}
-
+{% load get %}
 {% load static %}
 {% block css %}
 
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/post_style.css' %}" />
 {% endblock %}
 {% block content %}
-    <img src="{{ MEDIA_URL }}{{ image.image.url }}" alt="lala">
     <div class="container-fluid go_to_home">
          <a href="{% url 'Homepage' %}">
             <img src="{% static 'main/img/header_logo.png' %}" class="header_logo_manager" >
          </a>
     </div>
-
+<img src="{{ image|get:'logo'}}" \>
     <div class="container">
             <div class="Post">
                  <div class="col-*-12 post_title">
@@ -33,8 +32,9 @@
                         </div>
                     </div>
                <div class="post_body">
-                   <p2>{{ post.body }}</p2></br>
-
+                   {% autoescape off %}
+                        {{ post.body }}
+                   {% endautoescape %}
                </div>
             </div>
     </div>

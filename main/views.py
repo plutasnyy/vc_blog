@@ -13,5 +13,5 @@ def homepage(request):
 
 def post(request, id):
     post = PostModel.objects.all().filter(id=id)[0]
-    images = ImageModel.objects.all()[0]
+    images = ImageModel.objects.all()
     return render(request,'post.html', dict(post=post, image=images))

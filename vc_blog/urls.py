@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.homepage, name="Homepage"),
     url(r'post/(?P<id>[0-9]+)$', views.post, name="Postpage"),
+    url(r'^djrichtextfield/', include('djrichtextfield.urls')),
 
 ]# ... the rest of your URLconf here ...
 
