@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/post_style.css' %}" />
 {% endblock %}
 {% block content %}
+    <img src="{{ MEDIA_URL }}{{ image.image.url }}" alt="lala">
     <div class="container-fluid go_to_home">
          <a href="{% url 'Homepage' %}">
             <img src="{% static 'main/img/header_logo.png' %}" class="header_logo_manager" >

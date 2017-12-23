@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from main.models import Post as PostModel
+from main.models import ImageModel
+from django.contrib.staticfiles.storage import staticfiles_storage
 
 def homepage(request):
     Posts = PostModel.objects.all()
@@ -11,6 +13,5 @@ def homepage(request):
 
 def post(request, id):
     post = PostModel.objects.all().filter(id=id)[0]
-    return render(request,'post.html',{
-        'post':post
-    })
+    images = ImageModel.objects.all()[0]
+    return render(request,'post.html', dict(post=post, image=images))
