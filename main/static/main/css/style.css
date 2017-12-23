@@ -27,6 +27,7 @@ body, html {
     display: block;
     position: relative;
     width:60%;
+    margin-top: 30%;
 }
 .bg_content {
     position: absolute;
@@ -41,6 +42,7 @@ body, html {
     display: block;
     position: relative;
     width:450px;
+    margin-top: 3%;
 }
 
 .buttons_block{
@@ -48,6 +50,7 @@ body, html {
     display: block;
     position: relative;
     width:450px;
+    margin-top: 3%;
 }
 
 .btn{
@@ -162,7 +165,9 @@ p3{
     body {
         background-color: lightgreen;
     }
-
+    .header_logo{
+        margin-top: 15%;
+    }
     .btn_read_more{
         margin: 5% auto;
     }
@@ -193,3 +198,14 @@ p3{
     }
 }
 
+@media screen and (min-width: 993px) and (max-width: 1400px) {
+    .header_logo{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1650px) {
+    .header_logo{
+        margin-top: 20%;
+    }
+}

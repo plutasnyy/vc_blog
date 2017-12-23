@@ -1,12 +1,41 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block css %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/post_style.css' %}" />
+{% endblock %}
 {% block content %}
+    <div class="container-fluid go_to_home">
+         <a href="{% url 'Homepage' %}">
+            <img src="{% static 'main/img/header_logo.png' %}" class="header_logo_manager" >
+         </a>
+    </div>
+
     <div class="container">
-        <div class="Post">
-            <p2>ID: {{ post.id }}</p2></br>
-            <p2>Title: {{ post.title }}</p2></br>
-            <p2>Author: {{ post.author }}</p2></br>
-            <p2>Date: {{ post.created_time }}</p2></br>
-            <p2>Body: {{ post.body }}</p2></br>
-        </div>
+            <div class="Post">
+                 <div class="col-*-12 post_title">
+                        <p2>{{ post.title }}</p2>
+                    </div>
+                    <div class="row">
+                       <div class="col-md-2 col-xs-12 icon_text">
+                            <img src="{% static 'main/img/person_icon.png' %}" class="img_about_post" \>
+                            <p2>{{ post.author }}</p2>
+                        </div>
+                        <div class="col-md-3 col-xs-12 icon_text">
+                            <img src="{% static 'main/img/calendar_icon.png' %}" class="img_about_post" \>
+                            <p2>{{ post.created_time.date }}</p2>
+                        </div>
+                        <div class="col-md-2 col-xs-12 icon_text">
+                            <img src="{% static 'main/img/clock_icon.png' %}" class="img_about_post" \>
+                            <p2>{{ post.created_time.time }}</p2>
+                        </div>
+                    </div>
+               <div class="post_body">
+                   <p2>{{ post.body }}</p2></br>
+
+               </div>
+            </div>
     </div>
 
 {% endblock %}

@@ -1,0 +1,22 @@
+.Post{
+    font-size: 22px;
+    text-align: justify;
+    color: #8c8c8c;
+}
+.post_body{
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.go_to_home{
+    background-color: #0e0f10;
+    height: 300px;
+}
+
+.header_logo_manager{
+    max-height: 50px;
+    display: block;
+    position: relative;
+    width: 325px;
+    margin:125px auto;
+}
