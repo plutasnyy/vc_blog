@@ -1,6 +1,4 @@
 from django.db import models
-from djrichtextfield.models import RichTextField
-
 
 class ImageModel(models.Model):
     mainimage = models.ImageField(upload_to='img', null=True)
@@ -11,7 +9,7 @@ class ImageModel(models.Model):
 class Post(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=100)
-    body = models.RichTextField()
+    body = models.TextField()
     created_time = models.DateTimeField(auto_now_add=True)
     author = models.CharField(max_length=100)
     description = models.TextField()

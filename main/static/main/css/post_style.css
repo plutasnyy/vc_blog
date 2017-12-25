@@ -20,3 +20,10 @@
     width: 325px;
     margin:125px auto;
 }
+
+.post_body>img{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}

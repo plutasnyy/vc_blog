@@ -4,6 +4,6 @@ register = template.Library()
 from main.models import ImageModel
 
 
-@register.filter
-def get(Image,name):
-    return Image.filter(title=str(name))[0].mainimage.url
+@register.filter(name='get')
+def get(Images,name):
+    return Images.filter(title=str(name))[0].mainimage.url

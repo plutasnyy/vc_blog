@@ -25,8 +25,7 @@ from main import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.homepage, name="Homepage"),
-    url(r'post/(?P<id>[0-9]+)$', views.post, name="Postpage"),
-    url(r'^djrichtextfield/', include('djrichtextfield.urls')),
+    url(r'post/(?P<pk>[0-9]+)$', views.Post_Page.as_view(), name="Postpage"),
 
 ]# ... the rest of your URLconf here ...
 

@@ -11,7 +11,6 @@
             <img src="{% static 'main/img/header_logo.png' %}" class="header_logo_manager" >
          </a>
     </div>
-<img src="{{ image|get:'logo'}}" \>
     <div class="container">
             <div class="Post">
                  <div class="col-*-12 post_title">
@@ -32,9 +31,7 @@
                         </div>
                     </div>
                <div class="post_body">
-                   {% autoescape off %}
-                        {{ post.body }}
-                   {% endautoescape %}
+                    {{ rendered_post|safe }}
                </div>
             </div>
     </div>
