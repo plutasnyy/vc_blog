@@ -1,0 +1,211 @@
+* {
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.bg_container{
+    display: block;
+}
+
+.header_bg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+}
+
+.header_logo{
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    width:60%;
+    margin-top: 30%;
+}
+.bg_content {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    left: 0;
+    display: block;
+}
+.header_description{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    width:450px;
+    margin-top: 3%;
+}
+
+.buttons_block{
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    width:450px;
+    margin-top: 3%;
+}
+
+.btn{
+    display: block;
+    position: absolute;
+}
+
+.post_title{
+    margin-top: 7%;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+.btn_read_more{
+    margin-top: -13px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background-color: #0e0f10;
+}
+
+.ab{
+    padding-top: 14px;
+    padding-left: 56px;
+}
+.icon_text{
+    color:#8c8c8c;
+}
+
+.img_about_post{
+    padding-bottom: 5px;
+}
+
+.bar_under_post{
+    font-size: 16px;
+}
+
+.fill_post{
+    text-align: justify;
+    font-size:20px;
+    padding-bottom: 4%;
+}
+
+.meet-us{
+    background-color: #0e0f10;
+}
+p2{
+    color: #404040;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+p3{
+    color:yellow;
+}
+
+.meet_us_logo{
+    text-align:center;
+    padding-top:15%;
+}
+
+.about{
+    padding-top: 2%;
+    color: #d7d7d7;
+    text-align: justify;
+    font-size: 16px;
+
+}
+
+.about_hania{
+    text-align-last: right;
+}
+
+.about_kamil{
+    text-align-last: left;
+}
+
+.btn_in_header{
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border-color: #d7d7d7;
+    border-width:1px;
+    border-style: solid;
+    border-radius: 2px;
+    color: yellow;
+
+    padding-top: 13px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+    float: left;
+}
+
+.btn_in_header:hover{
+    background-color: #d7d7d7;
+    color: #0e0f10;
+}
+
+.btn-kamil{
+    float: left;
+}
+
+.btn-hania{
+    float: right;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        background-color: lightgreen;
+    }
+    .header_logo{
+        margin-top: 15%;
+    }
+    .btn_read_more{
+        margin: 5% auto;
+    }
+
+    .about{
+        font-size: 16px;
+        padding-bottom: 5%;
+    }
+    .about_hania{
+        text-align-last: center;
+    }
+    .about_kamil{
+        text-align-last: center;
+    }
+    .about_us_name{
+        text-align: center;
+    }
+    .about_us_photo{
+        padding-bottom: 5%;
+        text-align: center;
+    }
+    .btn-send-email{
+        float: none;
+        margin: 0 auto;
+    }
+    .btn-kamil{
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1400px) {
+    .header_logo{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1650px) {
+    .header_logo{
+        margin-top: 20%;
+    }
+}

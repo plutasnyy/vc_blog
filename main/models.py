@@ -1,4 +1,5 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 class ImageModel(models.Model):
     mainimage = models.ImageField(upload_to='img', null=True)
@@ -9,11 +10,11 @@ class ImageModel(models.Model):
 class Post(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=100)
-    body = models.TextField()
+    body = RichTextField()
     created_time = models.DateTimeField(auto_now_add=True)
     author = models.CharField(max_length=100)
     description = models.TextField()
-    images = models.ManyToManyField(ImageModel)
+    images = models.ManyToManyField(ImageModel, blank=True)
 
     def __str__(self):
         return self.title
