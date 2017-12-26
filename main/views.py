@@ -20,9 +20,7 @@ class Post_Page(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['images'] = ImageModel.objects.all()
-
         rendered = Template(self.object.body).render(Context(context))
-
         context['post'] = self.object
         context['rendered_post'] = rendered
         return context
