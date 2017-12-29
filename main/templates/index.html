@@ -13,7 +13,7 @@
             </div>
             <div class="row" style="display: none">
                 <div class="header_description">
-                    <p2>NO I KURWA JAKIES ZAJEBISTE POWITANKO</br> HAAAAALO!?</p2>
+                    <p2>NO JAKIES ZAJEBISTE POWITANKO</br> HAAAAALO!?</p2>
 
                 </div>
             </div>
@@ -33,22 +33,18 @@
         {% for post in posts %}
 
             <div class ="row">
-
-
                 <div class="row">
-
                     <div class="col-*-12 post_title">
                              <a href="{% url 'Postpage' post.id %}">
                                 <p2>{{ post.title }}</p2>
                               </a>
                     </div>
-
                 </div>
+
                 <div class="col-*-12 row fill_post">
-
                     <p2>{{ post.description }}</p2>
-
                 </div>
+
                 <div class="row bar_under_post">
                     <div class="col-md-2 col-xs-12 icon_text">
                         <img src="{% static 'main/img/person_icon.png' %}" class="img_about_post" \>
@@ -109,13 +105,12 @@
                     <div class="about about_kamil">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet ipsum urna. Pellentesque ut enim in est rutrum condimentum non ac risus. Fusce placerat risus ut tellus sollicitudin dapibus. Quisque suscipit felis sapien, eu accumsan erat varius ac. Morbi pretium lacus ultricies quam ultricies, eu posuere orci condimentum. Sed mi purus, tristique eget condimentum in, tristique feugiat dui. Cras et dui in nunc pretium imperdiet. Ut magna orci, interdum ut lacus sit amet, efficitur iaculis libero. Fusce eget quam nunc. Sed congue sapien metus, nec luctus nisi porttitor a. Integer convallis nunc tristique, pellentesque dolor quis, mattis justo. Etiam dolor libero, facilisis a ornare a, congue placerat mauris. Integer vel quam et dui tempus ultricies. In consectetur nulla at nunc cursus, sit amet vestibulum augue blandit.
                     </div>
-
                 </div>
                 <div class="col-md-4 col-xs-12 about_us_photo">
                     <img src="{% static 'main/img/circle_kamil.png' %}" style="width: 300px;height: 300px;" \>
                 </div>
             </div>
 
-        <div/>
+        </div>
     </div>
 {% endblock %}

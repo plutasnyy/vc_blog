@@ -77,6 +77,7 @@ body, html {
     padding-top: 14px;
     padding-left: 56px;
 }
+
 .icon_text{
     color:#8c8c8c;
 }
@@ -162,18 +163,44 @@ p3{
 }
 
 @media screen and (max-width: 992px) {
-    body {
-        background-color: lightgreen;
+    .ab{
+        padding-top: 14px;
+        padding-left: 85px;
+    }
+    .buttons_block{
+        width:650px;
+        margin-top: 10%;
+    }
+    .btn_in_header {
+        width: 300px;
+        height: 65px;
+        padding-top: 13px;
+        font-size: 26px;
+    }
+
+    .bar_under_post{
+         font-size: 26px;
+    }
+    .img_about_post{
+        padding-bottom: 3px;
+    }
+    .fill_post{
+        font-size:26px;
+    }
+    .post_title{
+        font-size: 45px;
     }
     .header_logo{
         margin-top: 15%;
     }
     .btn_read_more{
+        width: 300px;
+        height: 65px;
         margin: 5% auto;
     }
 
     .about{
-        font-size: 16px;
+        font-size: 26px;
         padding-bottom: 5%;
     }
     .about_hania{

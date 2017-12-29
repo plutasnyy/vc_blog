@@ -29,3 +29,11 @@
     margin: 0 auto;
     display: block;
 }
+@media screen and (max-width: 992px) {
+    .Post{
+        font-size: 26px;
+        text-align: justify;
+        color: #8c8c8c;
+    }
+
+}
