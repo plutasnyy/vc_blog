@@ -30,10 +30,11 @@
     display: block;
 }
 @media screen and (max-width: 992px) {
-    h2{
+    h2 {
         font-size: 54px;
     }
-    .Post{
+
+    .Post {
         font-size: 35px;
         text-align: justify;
         color: #8c8c8c;
