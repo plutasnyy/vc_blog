@@ -1,4 +1,4 @@
-#!/home/kamil/Pulpit/Programowanie/vc_blog/env/bin/python
+#!/home/meetbraian/vc_blog/env/bin/python
 
 import sys
 import getopt
