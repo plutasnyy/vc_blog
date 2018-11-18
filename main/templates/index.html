@@ -8,14 +8,8 @@
 {% block content %}
     <div class="bg_container">
         <div class="container bg_content">
-            <div class = "row">
+            <div class="row">
                 <img src="{% static 'main/img/header_logo.png' %}" class="header_logo">
-            </div>
-            <div class="row" style="display: none">
-                <div class="header_description">
-                    <p2>NO JAKIES ZAJEBISTE POWITANKO</br> HAAAAALO!?</p2>
-
-                </div>
             </div>
             <div class="row">
                 <div class="buttons_block">
@@ -28,16 +22,16 @@
         <img src="{% static 'main/img/header_background.jpg' %}" class="header_bg">
     </div>
 
-    <div id="braian" class = "container" style="padding-bottom: 200px;">
+    <div id="braian" class="container" style="padding-bottom: 200px;">
 
         {% for post in posts %}
 
-            <div class ="row">
+            <div class="row">
                 <div class="row">
                     <div class="col-*-12 post_title">
-                             <a href="{% url 'Postpage' post.id %}">
-                                <p2>{{ post.title }}</p2>
-                              </a>
+                        <a href="{% url 'Postpage' post.id %}">
+                            <p2>{{ post.title }}</p2>
+                        </a>
                     </div>
                 </div>
 
@@ -76,10 +70,30 @@
     </div>
     <div id="us" class="container-fluid meet-us">
 
-        <div class = "container">
+        <div class="container">
             <div class="row">
                 <div class="col-*-12 meet_us_logo">
                     <img src="{% static 'main/img/meet_us_logo.png' %}" \>
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 15%">
+                <div class="col-md-8 col-xs-12 about_us_name">
+
+                    <img src="{% static 'main/img/damian_horna.png' %}" \>
+
+                    <div class="about about_kamil">
+                        Computer science student at PUT. Enjoys researching tech topics and sharing knowledge with
+                        others. Interested in artificial intelligence, machine learning and mobile/web development. When
+                        not glued to the computer, he spends his time actively, whether it's playing football, working
+                        out or swimming. </br></br>
+                        Email: horna.damian@gmail.com</br>
+                        Linkedin:<a href="https://www.linkedin.com/in/damian-horna-8272b7152/">
+                        https://www.linkedin.com/in/damian-horna/</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 about_us_photo">
+                    <img src="{% static 'main/img/circle_damian.png' %}" style="width: 300px;height: 300px;" \>
                 </div>
             </div>
             <div class="row" style="padding-top: 15%;">
@@ -92,26 +106,30 @@
                     </div>
 
                     <div class="about about_hania">
-                        Computer Science student at Poznań University of Technology, constructor of <a href="https://web.facebook.com/Robot.Leonardo/">Robot Leonardo</a>, Artificial Intelligence enthusiast, the creator of the idea of Br{AI}an. In her private life, equestrian, krav maga practiser and big fan of the Witcher and Game of Thrones. </br>For any questions about the project please contact the email below:</br></br>
+                        Computer Science student at Poznań University of Technology, constructor of <a
+                            href="https://web.facebook.com/Robot.Leonardo/">Robot Leonardo</a>, Artificial Intelligence
+                        enthusiast, the creator of the idea of Br{AI}an. In her private life, equestrian, krav maga
+                        practiser and big fan of the Witcher and Game of Thrones. </br>For any questions about the
+                        project please contact the email below:</br></br>
                         Email: hanna.klimczak@gmail.com</br>
-                        Linkedin:<a href="https://www.linkedin.com/in/hklimczak/"> https://www.linkedin.com/in/hklimczak/</a>
-
-
-
-
+                        Linkedin:<a href="https://www.linkedin.com/in/hklimczak/">
+                        https://www.linkedin.com/in/hklimczak/</a>
                     </div>
                 </div>
             </div>
-
             <div class="row" style="padding-top: 15%;padding-bottom: 15%;">
                 <div class="col-md-8 col-xs-12 about_us_name">
 
                     <img src="{% static 'main/img/kamil_plucinski.png' %}" \>
 
                     <div class="about about_kamil">
-                        Hi, I’m a Computer Science student that enjoys coding a lot. Besides webdesign, I also start to love Artificial Intelligence. Making a computer “think” is very interesting. In my free time, I practise kav maga, I also like speedcubing, mostly 3x3, where my best time is 8.42. My other interest is photography.
-</br></br>Linkedin:<a href=”https://www.linkedin.com/in/kplucinski/”> https://www.linkedin.com/in/kplucinski/</a></br>
-Email: kamil.plucinski97@gmail.com
+                        Hi, I’m a Computer Science student that enjoys coding a lot. Besides webdesign, I also start to
+                        love Artificial Intelligence. Making a computer “think” is very interesting. In my free time, I
+                        practise kav maga, I also like speedcubing, mostly 3x3, where my best time is 8.42. My other
+                        interest is photography.
+                        </br></br>Linkedin:<a href=”https://www.linkedin.com/in/kplucinski/”>
+                        https://www.linkedin.com/in/kplucinski/</a></br>
+                        Email: kamil.plucinski97@gmail.com
                     </div>
                 </div>
                 <div class="col-md-4 col-xs-12 about_us_photo">
