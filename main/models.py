@@ -11,7 +11,7 @@ class Post(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=100)
     body = RichTextField()
-    created_time = models.DateTimeField(auto_now_add=True)
+    created_time = models.DateTimeField()
     author = models.CharField(max_length=100)
     description = models.TextField()
     images = models.ManyToManyField(ImageModel, blank=True)
