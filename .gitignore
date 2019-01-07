@@ -92,3 +92,8 @@ celerybeat-schedule
 # mypy
 .mypy_cache/
 .idea*
+*venv*
+*db*
+*migrations*
+*db*
+db.sqlite3
